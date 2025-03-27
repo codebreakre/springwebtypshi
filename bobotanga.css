@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+    background-color: #734060;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 1.68px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+nav > :last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+}
+nav > :first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+}
+
+
+#Togooc_info {
+    margin-top: 50px;
+    padding-bottom: 60px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Togooc_info article {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+}
+#ner_medee {
+    display: flex;
+    flex-direction: column;
+}
+#ner_medee p {
+    margin-top: 2px;
+    width: 90%;
+}
+#ner_medee p:first-child{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%
+}
+main>:first-child {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 40px;
+}
+main >section{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+main article {
+    width: 30%;
+}
+main article>:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+img {
+    width: 80%;
+    height: 75%;
+    transition: 200ms ease-in-out;
+}
+img:hover{
+    transition: ease-in-out;
+    transition-duration: 200ms;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+.bi-suit-heart-fill {
+    fill: #744061;
+    stroke: black;
+    stroke-width: 1.5;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+  
+  .bi-suit-heart-fill:hover {
+    fill: #a0527e; 
+    stroke: #333; 
+  }
+img[alt="profile"] {
+    border-radius: 1000px;
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  #bitter-text {
+    font-family: 'Bitter', serif;
+    font-weight: 1;
+    font-size: 16px;
+    color: #4D4D4D;
+  }
+ .count-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+ }
+ #cook-name{
+    color: #734060;
+ }
+ .bi-suit-heart-fill {
+    fill: #744061;
+  }
+  
