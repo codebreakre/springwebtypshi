@@ -87,7 +87,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%
+    width: 80%;
 }
 main>:first-child {
     padding-top: 50px;
@@ -117,6 +117,7 @@ img {
     width: 80%;
     height: 75%;
     transition: 200ms ease-in-out;
+    border-radius: 10px;
 }
 img:hover{
     transition: ease-in-out;
@@ -163,3 +164,13 @@ img[alt="profile"] {
     fill: #744061;
   }
   
+main a {
+    padding: 0;
+    margin: 0;
+}
+main >p:first-child{
+    padding-bottom: 50px;
+}
+#iddd{
+    padding-bottom: 50px;
+}
