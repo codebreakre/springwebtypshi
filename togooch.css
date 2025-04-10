@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #5a2d46;
+    flex-wrap: wrap; /* Allows elements to wrap for better responsiveness */
+    color: #5a2d46; /* Changed to a more readable color */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px; /* Added margin for spacing between items */
+    padding: 10px; /* Added padding for better click area */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures navigation adjusts on smaller screens */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    justify-content: center; /* Centers the navigation items */
+}
+    
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    justify-content: space-between;
+    text-align: center;
+}

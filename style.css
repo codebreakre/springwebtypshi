@@ -4,34 +4,16 @@ body {
     padding: 0;
     background-color: #fff;
 }
-header_top {
-    display: flex;
-    align-items: center;
-    
-    justify-content: center;
-    color: white;
-}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: white;
+    border-bottom: 2px solid #5a2d46;
     flex-wrap: wrap; /* Allows elements to wrap for better responsiveness */
-}
-
-.header-image {
-    max-width: 20%; /* Allows some flexibility in size */
-    text-align: right; /* Aligns the image to the right */
-    flex-shrink: 0; /* Prevents the image from shrinking too much */
-}
-
-.header-image img {
-    width: 100%;
-    height: auto;
-    max-width: 150px; /* Ensures the image remains appropriately sized */
-    display: block; /* Removes any extra space below the image */
+    color: #5a2d46; /* Changed to a more readable color */
+    
 }
 
 nav ul {
@@ -47,8 +29,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #5a2d46;
     font-weight: bold;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .hero {
@@ -72,6 +56,8 @@ nav ul li a {
     width: 100%;
     height: auto;
     display: block; /* Removes any extra space below the image */
+    border-radius: 10px; /* Adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
 
 .hero button {
@@ -85,25 +71,31 @@ nav ul li a {
 .categories {
     text-align: center;
     padding: 40px;
+    width: 100%;
 }
 
 .category-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
     flex-direction: row; /* Aligns images in a horizontal row */
+    width: 100%;
+
+    
 }
 
 .category {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .category img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
+    
 }
 
 .latest {
