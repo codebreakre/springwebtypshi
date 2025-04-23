@@ -147,7 +147,7 @@ article {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 250px;
-    height: 90%;
+    height: 100%;
     text-align: center;
     padding: 10px;
 }
@@ -303,6 +303,48 @@ h2 {
     right: 0;
 }
 
+/* Гар утас */
+@media (max-width: 576px) {
+    section .main {
+        flex-direction: column;
+        text-align: center;
+    }
+    section .main .main_image img {
+        width: 90%;
+        left: 0;
+    }
+    section p {
+        width: 90%;
+        left: auto;
+        bottom: auto;
+        margin: 0 auto;
+    }
+    section .main_btn {
+        left: auto;
+        bottom: auto;
+        margin: 20px auto;
+    }
+    nav ul {
+        display: none; /* эсвэл бургер меню рүү шилжүүлж болно */
+    }
+}
+
+/* Таблет */
+@media (min-width: 577px) and (max-width: 992px) {
+    section .main .main_image img {
+        width: 400px;
+    }
+    article {
+        max-width: 45%;
+    }
+}
+
+/* Том дэлгэц */
+@media (min-width: 993px) {
+    /* Энд үндсэн дизайн хадгалагдана */
+}
+
+
 @media (max-width: 768px) {
     .menu-article {
         flex: 0 0 220px;
@@ -314,14 +356,178 @@ h2 {
         font-size: 16px;
     }
 }
-        </style>
+
+/* Footer Styles */
+.site-footer {
+    background-color: #5a2d46;
+    color: #ecf0f1;
+    padding: 40px 0 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-about h3, 
+.footer-links h3, 
+.footer-contact h3, 
+.footer-newsletter h3 {
+    color: #faddc5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-about h3::after, 
+.footer-links h3::after, 
+.footer-contact h3::after, 
+.footer-newsletter h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #ecf0f1;
+}
+
+.footer-about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #5a2d46;
+    color: #ecf0f1;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background-color: #ecf0f1;
+    color: #5a2d46;
+}
+
+.footer-links ul, 
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, 
+.footer-contact li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, 
+.footer-contact li {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #faddc5;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: #faddc5;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 10px 15px;
+    background-color: #faddc5;
+    color: #5a2d46;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #faddc5;
+}
+
+.footer-bottom {
+    background-color: #5a2d46;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-bottom .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bdc3c7;
+    font-size: 14px;
+}
+
+.footer-payment {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-payment i {
+    font-size: 24px;
+    color: #bdc3c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+      </style>
     </head>
     <body>
         <section>
             <nav>
                 <div class="logo">
                 <a href="index.html"></a>
-                <img src="C:\Users\ultimate\Pictures\Screenshots\Screenshot 2025-03-27 160630.png">
+                <img src="C:\Users\ultimate\Pictures\Screenshots\Screenshot 2025-03-27 160630.png" alt="logo">
                 </div>
 
                 <ul>
@@ -342,7 +548,7 @@ h2 {
                 </div>
 
                 <div class="main_image">
-                    <img src="C:\Users\ultimate\Pictures\Screenshots\Screenshot 2025-03-27 160630.png">
+                    <img src="C:\Users\ultimate\Pictures\Screenshots\Screenshot 2025-03-27 160630.png" alt="logo">
                 </div>
             </div>
 
@@ -368,7 +574,7 @@ h2 {
             <div class="menu-container" id="menuContainer">
                 <div class="menu-wrapper">
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\d59abd704a27f12d4aeda7373a90583d.jpg" alt="Breakfast">
+                        <img src="https://pinchofyum.com/wp-content/uploads/ALDI-Pumpkin-Shortcakes-4-1024x1536.jpg" alt="Breakfast">
                         <div class="menu_info">
                             <h2>Breakfast</h2>
                             <div class="menu_icon">
@@ -383,7 +589,7 @@ h2 {
                     </article>
                     
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\fab5810fa9741cc3cf070d69eefa5ea0.jpg" alt="Lunch">
+                        <img src="https://pinchofyum.com/wp-content/uploads/Crispy-Chicken-Cutlets-on-Plate-420x600.jpg" alt="Lunch">
                         <div class="menu_info">
                             <h2>Lunch</h2>
                             <div class="menu_icon">
@@ -398,7 +604,7 @@ h2 {
                     </article>
                     
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\2d6a6994372137fbbfa245a5f279cb1e.jpg" alt="Dinner">
+                        <img src="https://pinchofyum.com/wp-content/uploads/Pepperoncini-Chicken-6-420x600.jpg" alt="Dinner">
                         <div class="menu_info">
                             <h2>Dinner</h2>
                             <div class="menu_icon">
@@ -413,7 +619,7 @@ h2 {
                     </article>
                     
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\fc2f3fe53d1a67c99f8812bbc8c31bfa.jpg" alt="Healthy">
+                        <img src="https://pinchofyum.com/wp-content/uploads/Lemon-Rosemary-Chicken-Soup-183x183.jpg" alt="Healthy">
                         <div class="menu_info">
                             <h2>Healthy</h2>
                             <div class="menu_icon">
@@ -428,7 +634,7 @@ h2 {
                     </article>
                     
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\2178097e1e673f589841b156e47a8304.jpg" alt="Traditional">
+                        <img src="https://pinchofyum.com/wp-content/uploads/Family-Style-Pitas-2-183x183.jpg" alt="Traditional">
                         <div class="menu_info">
                             <h2>Traditional</h2>
                             <div class="menu_icon">
@@ -443,7 +649,7 @@ h2 {
                     </article>
                     
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\e0a575a386d8994d5156d1f7fac5fe0e.jpg" alt="Vegetarian">
+                        <img src="https://pinchofyum.com/wp-content/uploads/Cauliflower-Black-Bean-Tostadas-4-183x183.jpg" alt="Vegetarian">
                         <div class="menu_info">
                             <h2>Vegetarian</h2>
                             <div class="menu_icon">
@@ -458,7 +664,7 @@ h2 {
                     </article>
                     
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\0a7a57c8acc52fe736ea93635495d779.jpg" alt="Soup">
+                        <img src="https://pinchofyum.com/wp-content/uploads/Tortilla-Soup-183x183.jpg" alt="Soup">
                         <div class="menu_info">
                             <h2>Soup</h2>
                             <div class="menu_icon">
@@ -473,7 +679,7 @@ h2 {
                     </article>
                     
                     <article class="menu-article">
-                        <img src="C:\Users\ultimate\Documents\web\fb38ea428f90069894f83bc9d3530781.jpg" alt="Salad">
+                        <img src="https://pinchofyum.com/wp-content/uploads/Kale-Apple-Salad-6-2-183x183.jpg" alt="Salad">
                         <div class="menu_info">
                             <h2>Salad</h2>
                             <div class="menu_icon">
@@ -516,5 +722,61 @@ h2 {
         }
     </script>
 
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <!-- Лого ба товч тайлбар -->
+                <div class="footer-about">
+                    <h3>Food Express</h3>
+                    <p>Бид таны хүссэн амттан, эрүүл хоолыг хүргэх болно.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Холбоосууд -->
+                <div class="footer-links">
+                    <h3>Холбоос</h3>
+                    <ul>
+                        <li><a href="#">Нүүр</a></li>
+                        <li><a href="#">Бидний тухай</a></li>
+                        <li><a href="#">Тогооч</a></li>
+                        <li><a href="#">Хоолны цэс</a></li>
+                        <li><a href="#">Холбоо барих</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Холбоо барих -->
+                <div class="footer-contact">
+                    <h3>Холбоо барих</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Улаанбаатар хот, Сүхбаатар дүүрэг</li>
+                        <li><i class="fas fa-phone"></i> +976 12345678</li>
+                        <li><i class="fas fa-envelope"></i> info@foodime.mn</li>
+                    </ul>
+                </div>
+                <!-- Мэдээлэл хүлээн авах -->
+                <div class="footer-newsletter">
+                    <h3>Мэдээлэл хүлээн авах</h3>
+                    <p>Биднээс шинэ хоолны цэсийг цаг алдалгүй авахыг хүсвэл бүртгүүлээрэй.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="И-мэйл хаяг" required>
+                        <button type="submit">Бүртгүүлэх</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-container">
+                    <p>&copy; 2025 Foodime. Бүх эрх хуулиар хамгаалагдсан.</p>
+                    <div class="footer-payment">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html> 
