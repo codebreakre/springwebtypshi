@@ -302,49 +302,6 @@ h2 {
 .carousel-btn.next {
     right: 0;
 }
-
-/* Гар утас */
-@media (max-width: 576px) {
-    section .main {
-        flex-direction: column;
-        text-align: center;
-    }
-    section .main .main_image img {
-        width: 90%;
-        left: 0;
-    }
-    section p {
-        width: 90%;
-        left: auto;
-        bottom: auto;
-        margin: 0 auto;
-    }
-    section .main_btn {
-        left: auto;
-        bottom: auto;
-        margin: 20px auto;
-    }
-    nav ul {
-        display: none; /* эсвэл бургер меню рүү шилжүүлж болно */
-    }
-}
-
-/* Таблет */
-@media (min-width: 577px) and (max-width: 992px) {
-    section .main .main_image img {
-        width: 400px;
-    }
-    article {
-        max-width: 45%;
-    }
-}
-
-/* Том дэлгэц */
-@media (min-width: 993px) {
-    /* Энд үндсэн дизайн хадгалагдана */
-}
-
-
 @media (max-width: 768px) {
     .menu-article {
         flex: 0 0 220px;
@@ -356,8 +313,7 @@ h2 {
         font-size: 16px;
     }
 }
-
-/* Footer Styles */
+/* Footer hesgiin css */
 .site-footer {
     background-color: #5a2d46;
     color: #ecf0f1;
@@ -407,7 +363,6 @@ h2 {
     display: flex;
     gap: 15px;
 }
-
 .footer-social a {
     display: flex;
     align-items: center;
@@ -497,17 +452,14 @@ h2 {
     color: #bdc3c7;
     font-size: 14px;
 }
-
 .footer-payment {
     display: flex;
     gap: 15px;
 }
-
 .footer-payment i {
     font-size: 24px;
     color: #bdc3c7;
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
@@ -519,7 +471,6 @@ h2 {
         gap: 10px;
     }
 }
-
       </style>
     </head>
     <body>
@@ -562,7 +513,7 @@ h2 {
         </section>
 
         
-       <!-- Хоолны цэсний шинэчилсэн хэсэг -->
+       <!-- menu heseg -->
     <section class="menu-section" id="Menu">
         <h1 class="menu-title">Хоолны төрлүүд</h1>
         
@@ -704,16 +655,16 @@ h2 {
     <script>
         function scrollMenu(direction) {
             const container = document.getElementById('menuContainer');
-            const scrollAmount = 300; // Гүйлгэх хэмжээ
+            const scrollAmount = 300; // guilgeh hemjee
             
             if (direction === -1) {
-                // Урагш (зүүн тийш) гүйлгэх
+                // zuunchee
                 container.scrollBy({
                     left: -scrollAmount,
                     behavior: 'smooth'
                 });
             } else {
-                // Хойш (баруун тийш) гүйлгэх
+                // baruunchaa
                 container.scrollBy({
                     left: scrollAmount,
                     behavior: 'smooth'
@@ -725,7 +676,6 @@ h2 {
         <!-- Footer -->
         <footer class="site-footer">
             <div class="footer-container">
-                <!-- Лого ба товч тайлбар -->
                 <div class="footer-about">
                     <h3>Food Express</h3>
                     <p>Бид таны хүссэн амттан, эрүүл хоолыг хүргэх болно.</p>
@@ -736,7 +686,7 @@ h2 {
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <!-- Холбоосууд -->
+                <!-- links -->
                 <div class="footer-links">
                     <h3>Холбоос</h3>
                     <ul>
