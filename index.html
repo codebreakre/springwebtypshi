@@ -4,9 +4,317 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>foodweb</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width:100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 100;
+    top: 0;
+}
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #faddc5;
+    display: block;
+    transition: 0.2s linear; 
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+    color:#5a2d46;
+}
+section nav .icon i{
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section nav .icon i:hover{
+    color:#5a2d46;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .main_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+section .main .main_image img{
+    width: 600px;
+    position: relative;
+    left: 70px;
+}
+
+section p{
+    width: 450px;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+    bottom: 120px;
+    line-height: 22px;
+}
+
+section .main_btn{
+    background: #5a2d46;
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    width: 200px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+/*menu*/
+
+section {
+    padding: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+article {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 250px;
+    height: 90%;
+    text-align: center;
+    padding: 10px;
+}
+article img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+}
+h2 {
+    color: #5a2d46;
+    margin: 10px 0;
+}
+.price {
+    font-weight: bold;
+    color: #333;
+}
+.stars {
+    color: #5a2d46;
+    margin: 5px 0;
+}
+.menu_btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:#5a2d46;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.article img:hover img{
+    transform: scale(1.1);
+}
+
+
+.menu-section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 36px;
+    color: #5a2d46;
+    margin-bottom: 40px;
+}
+.menu-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.menu-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 0;
+}
+
+.menu-container::-webkit-scrollbar {
+    display: none;
+}
+.menu-wrapper {
+    display: flex;
+    gap: 25px;
+    padding: 10px 0;
+}
+
+.menu-article {
+    flex: 0 0 280px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+.menu-article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.menu-article:hover img {
+    transform: scale(1.05);
+}
+
+.menu_info {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu_info h2 {
+    color: #5a2d46;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.menu_icon {
+    color: #5a2d46;
+    margin: 10px 0;
+}
+
+.menu_btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #5a2d46;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.menu_btn:hover {
+    background-color: #3a1d2e;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #5a2d46;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #5a2d46;
+    color: white;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+.carousel-btn.next {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .menu-article {
+        flex: 0 0 220px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+        </style>
     </head>
     <body>
         <section>
@@ -48,127 +356,165 @@
         </section>
 
         
-        <div class="menu" id="Menu">
-            <h1>Хоолны төрлүүд</h1>
+       <!-- Хоолны цэсний шинэчилсэн хэсэг -->
+    <section class="menu-section" id="Menu">
+        <h1 class="menu-title">Хоолны төрлүүд</h1>
+        
+        <div class="menu-carousel">
+            <button class="carousel-btn prev" onclick="scrollMenu(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="menu-container" id="menuContainer">
+                <div class="menu-wrapper">
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\d59abd704a27f12d4aeda7373a90583d.jpg" alt="Breakfast">
+                        <div class="menu_info">
+                            <h2>Breakfast</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\fab5810fa9741cc3cf070d69eefa5ea0.jpg" alt="Lunch">
+                        <div class="menu_info">
+                            <h2>Lunch</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\2d6a6994372137fbbfa245a5f279cb1e.jpg" alt="Dinner">
+                        <div class="menu_info">
+                            <h2>Dinner</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\fc2f3fe53d1a67c99f8812bbc8c31bfa.jpg" alt="Healthy">
+                        <div class="menu_info">
+                            <h2>Healthy</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\2178097e1e673f589841b156e47a8304.jpg" alt="Traditional">
+                        <div class="menu_info">
+                            <h2>Traditional</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\e0a575a386d8994d5156d1f7fac5fe0e.jpg" alt="Vegetarian">
+                        <div class="menu_info">
+                            <h2>Vegetarian</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\0a7a57c8acc52fe736ea93635495d779.jpg" alt="Soup">
+                        <div class="menu_info">
+                            <h2>Soup</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-article">
+                        <img src="C:\Users\ultimate\Documents\web\fb38ea428f90069894f83bc9d3530781.jpg" alt="Salad">
+                        <div class="menu_info">
+                            <h2>Salad</h2>
+                            <div class="menu_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <button class="carousel-btn next" onclick="scrollMenu(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
-        <section class="menu">
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\d59abd704a27f12d4aeda7373a90583d.jpg" alt="Burger">
-                <div class="menu_info">
-                    <h2>Breakfast</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\fab5810fa9741cc3cf070d69eefa5ea0.jpg" alt="Burger">
-                <div class="menu_info">
-                    <h2>Lunch</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\2d6a6994372137fbbfa245a5f279cb1e.jpg" alt="Burger">
-                <div class="menu_info">
-                    <h2>Dinner</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\fc2f3fe53d1a67c99f8812bbc8c31bfa.jpg" alt="Burger">
+    </section>
 
-                <div class="menu_info">
-                    <h2>Healthy</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\2178097e1e673f589841b156e47a8304.jpg" alt="Burger">
+    <script>
+        function scrollMenu(direction) {
+            const container = document.getElementById('menuContainer');
+            const scrollAmount = 300; // Гүйлгэх хэмжээ
+            
+            if (direction === -1) {
+                // Урагш (зүүн тийш) гүйлгэх
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                // Хойш (баруун тийш) гүйлгэх
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
 
-                <div class="menu_info">
-                    <h2>Traditional</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\e0a575a386d8994d5156d1f7fac5fe0e.jpg" alt="Burger">
-                <div class="menu_info">
-                    <h2>Vegetarian</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\0a7a57c8acc52fe736ea93635495d779.jpg" alt="Burger">
-                <div class="menu_info">
-                    <h2>Soup</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-            <article>
-                <img src="C:\Users\ultimate\Documents\web\fb38ea428f90069894f83bc9d3530781.jpg" alt="Burger">
-                <div class="menu_info">
-                    <h2>Salad</h2>
-                    <div class="menu_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="menu_btn">Дэлгэрэнгүй</a>
-                </div>
-            </article>
-        </section>
-
-       
-    
     </body>
 </html> 
