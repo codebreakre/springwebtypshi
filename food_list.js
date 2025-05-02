@@ -1,5 +1,10 @@
 import { changemode } from "./changemode.js";
-window.changemode = changemode;
+import Header from "../components/header.js";
+customElements.define('header-component', Header);
+import ChefCard from "./components/togooch.js";
+
+  
+window.changemode = changemode; // ene DOM deerh changemode functiond iishee importloj oruulj irsn changemode functioniig onooj ugsn
 
 const foods = [
     { name: "Burger", image: "zurag/hool.jpg" },
@@ -11,7 +16,7 @@ const foods = [
     { name: "Tacos", image: "zurag/hool.jpg" },
     { name: "Noodles", image: "zurag/hool.jpg" },
     { name: "Salad", image: "zurag/hool.jpg" },
-{ name: "Hot Dog", image: "zurag/hool.jpg" },
+    { name: "Hot Dog", image: "zurag/hool.jpg" },
 { name: "Pancakes", image: "zurag/hool.jpg" },
 { name: "Ice Cream", image: "zurag/hool.jpg" },
 { name: "Sandwich", image: "zurag/hool.jpg" },
@@ -26,7 +31,7 @@ const foods = [
   let currentIndex = 0;
 const itemsPerPage = 9;
 
-function    createFood() {
+function createFood() {
   const container = document.getElementById('foods-container');
 
   const end = currentIndex + itemsPerPage;
@@ -54,7 +59,7 @@ function    createFood() {
 
     currentIndex += itemsPerPage;
 
-    if (currentIndex >= cooks.length) {
+    if (currentIndex >= foods.length) {
         document.getElementById('see-more').style.display = 'none';
     }
   }

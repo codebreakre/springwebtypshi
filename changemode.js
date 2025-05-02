@@ -10,3 +10,5 @@ export function changemode(){
         document.documentElement.style.setProperty('--text-color', 'black');   
     }
 }
+//ene theme solidog function bichsen baigaa. ta 2 bichsn css deeree ene variable iig utga hesg deer ni onoogood uguhud l bolno.
+//tgeed uursdiin pagetei holbootoi javascript file deer idevhjuuleed ugnu.
