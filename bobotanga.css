@@ -1,3 +1,8 @@
+:root {
+    --mainColor: #734060 ;
+    --background-color: whitesmoke;
+    --text-color: black;
+}
 *{
     margin: 0;
     line-height: 24px;
@@ -6,12 +11,14 @@
 }
 a{
     text-decoration: none;
-    color: #1A1A1A;
+    color: var(--text-color)  ;
 }
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 header {
     display: flex;
@@ -21,7 +28,7 @@ header {
     background-color: #734060;
     padding-top: 10px;
     padding-bottom: 10px;  
-    color: #FFFFFF;
+    color: white;
     font-weight: 300;
     line-height: 14px;
     letter-spacing: 1.68px;
@@ -163,6 +170,8 @@ img[alt="profile"] {
  .bi-suit-heart-fill {
     fill: #744061;
   }
+
+
   
 main a {
     padding: 0;
@@ -173,4 +182,12 @@ main >p:first-child{
 }
 #iddd{
     padding-bottom: 50px;
+}
+#cooks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
