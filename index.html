@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang=""en>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="FOODIME - Discover and share easy-to-make recipes, find dishes by category, and learn from others on this recipe-sharing platform.">
+
         <title>foodweb</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <style>
-            *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -477,9 +479,9 @@ h2 {
         <section>
             <nav>
                 <div class="logo">
-                <a href="index.html"></a>
-                <img src="C:\Users\ultimate\Pictures\Screenshots\Screenshot 2025-03-27 160630.png" alt="logo">
-                </div>
+                <h2>foodime.</h2>
+                </a>
+            </div>
 
                 <ul>
                     <li><a href="#Cook">Тогооч</a></li>
@@ -488,9 +490,9 @@ h2 {
                     <li><a href="#About">Бидний тухай</a></li>
                 </ul>
 
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                <button class="icon" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
             </nav>
 
             <div class="main">
@@ -518,7 +520,7 @@ h2 {
         <h1 class="menu-title">Хоолны төрлүүд</h1>
         
         <div class="menu-carousel">
-            <button class="carousel-btn prev" onclick="scrollMenu(-1)">
+            <button class="carousel-btn prev" onclick="scrollMenu(-1)" arial-lable="Scroll left">
                 <i class="fas fa-chevron-left"></i>
             </button>
             
@@ -646,7 +648,7 @@ h2 {
                 </div>
             </div>
             
-            <button class="carousel-btn next" onclick="scrollMenu(1)">
+            <button class="carousel-btn next" onclick="scrollMenu(1)" arial-label="Scroll right">
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
@@ -678,19 +680,18 @@ h2 {
             <div class="footer-container">
                 <div class="footer-about">
                     <h3>Food Express</h3>
-                    <p>Бид таны хүссэн амттан, эрүүл хоолыг хүргэх болно.</p>
+                    <p>Бид таны хүссэн амттан, эрүүл хоолыг хуваалцах болно.</p>
                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <!-- links -->
+                
                 <div class="footer-links">
                     <h3>Холбоос</h3>
                     <ul>
-                        <li><a href="#">Нүүр</a></li>
+                        <li><a href="index.html">Нүүр</a></li>
                         <li><a href="#">Бидний тухай</a></li>
                         <li><a href="#">Тогооч</a></li>
                         <li><a href="#">Хоолны цэс</a></li>
@@ -698,7 +699,7 @@ h2 {
                     </ul>
                 </div>
     
-                <!-- Холбоо барих -->
+             
                 <div class="footer-contact">
                     <h3>Холбоо барих</h3>
                     <ul>
@@ -707,7 +708,7 @@ h2 {
                         <li><i class="fas fa-envelope"></i> info@foodime.mn</li>
                     </ul>
                 </div>
-                <!-- Мэдээлэл хүлээн авах -->
+                
                 <div class="footer-newsletter">
                     <h3>Мэдээлэл хүлээн авах</h3>
                     <p>Биднээс шинэ хоолны цэсийг цаг алдалгүй авахыг хүсвэл бүртгүүлээрэй.</p>
@@ -719,12 +720,8 @@ h2 {
             </div>
             <div class="footer-bottom">
                 <div class="footer-container">
-                    <p>&copy; 2025 Foodime. Бүх эрх хуулиар хамгаалагдсан.</p>
-                    <div class="footer-payment">
-                        <i class="fab fa-cc-visa"></i>
-                        <i class="fab fa-cc-mastercard"></i>
-                        <i class="fab fa-cc-paypal"></i>
-                    </div>
+                    <p>&copy; 2025 Foodime.</p>
+
                 </div>
             </div>
         </footer>
