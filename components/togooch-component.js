@@ -6,10 +6,10 @@ class ChefCard extends HTMLElement {
     connectedCallback() {
       const name = this.getAttribute("name");
       const description = this.getAttribute("description");
-  
+      
       this.innerHTML = `
         <section id="Togooc_info">
-          <img src="zurag/profile.jpg" alt="profile">
+          <img src="../zurag/profile.jpg" alt="profile">
           <article>
             <section id="ner_medee">
               <p id="cook-name">${name}</p>

@@ -1,0 +1,135 @@
+[
+    {
+        "food_id": 1,
+        "name": "Burger",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 101,
+        "like_count": 0
+    },
+    {
+        "food_id": 2,
+        "name": "Pizza",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 102,
+        "like_count": 0
+    },
+    {
+        "food_id": 3,
+        "name": "Sushi",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 101,
+        "like_count": 0
+    },
+    {
+        "food_id": 4,
+        "name": "Pasta",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 103,
+        "like_count": 0
+    },
+    {
+        "food_id": 5,
+        "name": "Fried Rice",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 102,
+        "like_count": 0
+    },
+    {
+        "food_id": 6,
+        "name": "Steak",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 104,
+        "like_count": 0
+    },
+    {
+        "food_id": 7,
+        "name": "Tacos",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 101,
+        "like_count": 0
+    },
+    {
+        "food_id": 8,
+        "name": "Noodles",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 103,
+        "like_count": 0
+    },
+    {
+        "food_id": 9,
+        "name": "Salad",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 104,
+        "like_count": 0
+    },
+    {
+        "food_id": 10,
+        "name": "Hot Dog",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 102,
+        "like_count": 0
+    },
+    {
+        "food_id": 11,
+        "name": "Pancakes",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 101,
+        "like_count": 0
+    },
+    {
+        "food_id": 12,
+        "name": "Ice Cream",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 103,
+        "like_count": 0
+    },
+    {
+        "food_id": 13,
+        "name": "Sandwich",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 104,
+        "like_count": 0
+    },
+    {
+        "food_id": 14,
+        "name": "Dumplings",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 102,
+        "like_count": 0
+    },
+    {
+        "food_id": 15,
+        "name": "BBQ Ribs",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 101,
+        "like_count": 0
+    },
+    {
+        "food_id": 16,
+        "name": "Curry",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 103,
+        "like_count": 0
+    },
+    {
+        "food_id": 17,
+        "name": "Lasagna",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 104,
+        "like_count": 0
+    },
+    {
+        "food_id": 18,
+        "name": "Cheesecake",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 102,
+        "like_count": 0
+    },
+    {
+        "food_id": 19,
+        "name": "Soup",
+        "image": "../zurag/hool.jpg",
+        "chef_id": 101,
+        "like_count": 0
+    }
+]

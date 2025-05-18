@@ -114,7 +114,7 @@ justify-content: center;
 align-items: center;
 width: 100%;
 }
-main article {
+main food-card {
     width: 30%;
 }
 main article>:last-child{
