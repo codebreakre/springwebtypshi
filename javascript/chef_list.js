@@ -1,11 +1,11 @@
 import { changemode } from "./changemode.js";
 window.changemode = changemode;
-
 import Header from "../components/header-component.js";
 import ChefCard from "../components/togooch-component.js";
 let currentIndex = 0;
 const itemsPerPage = 5;
 let cooks = [];
+
 
 function createChef() {
   const container = document.getElementById('cooks-container');

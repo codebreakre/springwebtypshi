@@ -3,7 +3,7 @@ import Header from "../components/header-component.js";
 import ChefCard from "../components/togooch-component.js";
 import Food from "../components/food-component.js";
 import filterFood from "../components/filterFood-component.js";
-  
+
 window.changemode = changemode; // ene DOM deerh changemode functiond iishee importloj oruulj irsn changemode functioniig onooj ugsn
 let currentIndex = 0;
 let itemsPerPage = 9;
@@ -40,6 +40,10 @@ function filterByTime() {
     filterredFoods=filterredFoods.filter(item => item.time >= 40 && item.time <= 60);
   } else if (selectedTime === "60+") {
     filterredFoods=filterredFoods.filter(item => item.time >= 60);
+  }else if(selectedTime==="all"){
+    currentIndex=0;
+    filterredFoods=foods;
+    filterByCategory();
   }
 }
 function sortByLikes() {
@@ -87,7 +91,7 @@ function createFood() {
   }
 }
 
-function del(){
+export function del(){
   document.getElementById('foods-container').innerHTML = '';
 }
   

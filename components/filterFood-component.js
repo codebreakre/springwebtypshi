@@ -28,6 +28,7 @@ constructor() {
 
     <label for="time">Time:</label>
     <select id="time">
+    <option value="all">All</option>
     <option value="10-20">10-20 minut</option>
     <option value="20-40">20-40 minut</option>  
     <option value="40-60">40-60 minut</option>
