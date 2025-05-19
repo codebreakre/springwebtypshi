@@ -1,135 +1,200 @@
 [
-    {
-        "food_id": 1,
-        "name": "Burger",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 101,
-        "like_count": 0
-    },
-    {
-        "food_id": 2,
-        "name": "Pizza",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 102,
-        "like_count": 0
-    },
-    {
-        "food_id": 3,
-        "name": "Sushi",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 101,
-        "like_count": 0
-    },
-    {
-        "food_id": 4,
-        "name": "Pasta",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 103,
-        "like_count": 0
-    },
-    {
-        "food_id": 5,
-        "name": "Fried Rice",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 102,
-        "like_count": 0
-    },
-    {
-        "food_id": 6,
-        "name": "Steak",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 104,
-        "like_count": 0
-    },
-    {
-        "food_id": 7,
-        "name": "Tacos",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 101,
-        "like_count": 0
-    },
-    {
-        "food_id": 8,
-        "name": "Noodles",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 103,
-        "like_count": 0
-    },
-    {
-        "food_id": 9,
-        "name": "Salad",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 104,
-        "like_count": 0
-    },
-    {
-        "food_id": 10,
-        "name": "Hot Dog",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 102,
-        "like_count": 0
-    },
-    {
-        "food_id": 11,
-        "name": "Pancakes",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 101,
-        "like_count": 0
-    },
-    {
-        "food_id": 12,
-        "name": "Ice Cream",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 103,
-        "like_count": 0
-    },
-    {
-        "food_id": 13,
-        "name": "Sandwich",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 104,
-        "like_count": 0
-    },
-    {
-        "food_id": 14,
-        "name": "Dumplings",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 102,
-        "like_count": 0
-    },
-    {
-        "food_id": 15,
-        "name": "BBQ Ribs",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 101,
-        "like_count": 0
-    },
-    {
-        "food_id": 16,
-        "name": "Curry",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 103,
-        "like_count": 0
-    },
-    {
-        "food_id": 17,
-        "name": "Lasagna",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 104,
-        "like_count": 0
-    },
-    {
-        "food_id": 18,
-        "name": "Cheesecake",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 102,
-        "like_count": 0
-    },
-    {
-        "food_id": 19,
-        "name": "Soup",
-        "image": "../zurag/hool.jpg",
-        "chef_id": 101,
-        "like_count": 0
-    }
+  {
+    "food_id": 1,
+    "name": "Burger",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 101,
+    "like_count": 5,
+    "time": 35,
+    "category": "Lunch"
+  },
+  {
+    "food_id": 2,
+    "name": "Pizza",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 102,
+    "like_count": 10,
+    "time": 45,
+    "category": "Lunch"
+  },
+  {
+    "food_id": 3,
+    "name": "Sushi",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 101,
+    "like_count": 0,
+    "time": 25,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 4,
+    "name": "Pasta",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 103,
+    "like_count": 0,
+    "time": 30,
+    "category": "Lunch"
+  },
+  {
+    "food_id": 5,
+    "name": "Fried Rice",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 102,
+    "like_count": 0,
+    "time": 20,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 6,
+    "name": "Steak",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 104,
+    "like_count": 0,
+    "time": 60,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 7,
+    "name": "Tacos",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 101,
+    "like_count": 0,
+    "time": 15,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 8,
+    "name": "Noodles",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 103,
+    "like_count": 0,
+    "time": 18,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 9,
+    "name": "Salad",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 104,
+    "like_count": 0,
+    "time": 12,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 10,
+    "name": "Hot Dog",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 102,
+    "like_count": 0,
+    "time": 14,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 11,
+    "name": "Pancakes",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 101,
+    "like_count": 0,
+    "time": 22,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 12,
+    "name": "Ice Cream",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 103,
+    "like_count": 0,
+    "time": 50,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 13,
+    "name": "Sandwich",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 104,
+    "like_count": 0,
+    "time": 13,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 14,
+    "name": "Dumplings",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 102,
+    "like_count": 0,
+    "time": 40,
+    "category": "Lunch"
+  },
+  {
+    "food_id": 15,
+    "name": "BBQ Ribs",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 101,
+    "like_count": 0,
+    "time": 75,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 16,
+    "name": "Curry",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 103,
+    "like_count": 0,
+    "time": 55,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 17,
+    "name": "Lasagna",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 104,
+    "like_count": 0,
+    "time": 80,
+    "category": "Breakfast"
+  },
+  {
+    "food_id": 18,
+    "name": "Cheesecake",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 102,
+    "like_count": 0,
+    "time": 90,
+    "category": "Dinner"
+  },
+  {
+    "food_id": 19,
+    "name": "Soup",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 101,
+    "like_count": 0,
+    "time": 28,
+    "category": "Lunch"
+  },
+  {
+    "food_id": 20,
+    "name": "Quiche",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 103,
+    "like_count": 0,
+    "time": 35,
+    "category": "Lunch"
+  },
+  {
+    "food_id": 21,
+    "name": "Brownies",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 104,
+    "like_count": 0,
+    "time": 45,
+    "category": "Lunch"
+  },
+  {
+    "food_id": 22,
+    "name": "Muffins",
+    "image": "../zurag/hool.jpg",
+    "chef_id": 102,
+    "like_count": 0,
+    "time": 25,
+    "category": "Breakfast"
+  }
 ]

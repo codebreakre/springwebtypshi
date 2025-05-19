@@ -2,7 +2,6 @@ import { changemode } from "./changemode.js";
 window.changemode = changemode;
 
 import Header from "../components/header-component.js";
-customElements.define('header-component', Header);
 import ChefCard from "../components/togooch-component.js";
 let currentIndex = 0;
 const itemsPerPage = 5;

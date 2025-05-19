@@ -6,7 +6,7 @@ class Food extends HTMLElement {
   connectedCallback() {
     this.render();
   }
-
+  
   render() {
     const image = this.getAttribute("image");
     const name = this.getAttribute("name");
